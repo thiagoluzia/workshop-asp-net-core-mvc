@@ -27,6 +27,9 @@ namespace SalesWebMvc.Models
             BaseSalary = baseSalary;
         }
 
+        public Seller(int id, string name, string email, DateTime birthDate, double baseSalary, Department d1) : this(id, name, email, birthDate, baseSalary)
+        {
+        }
 
         public void AddSales(SalesRecord sr)
         {
